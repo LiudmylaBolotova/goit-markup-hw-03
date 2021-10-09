@@ -21,45 +21,51 @@
   <body class="body">
     <!--шапка-->
     <header class="body-header">
+    <div class="container">
       <nav>
         <a href="" class="logo"><span class="span-blue">Web</span>Studio</a>
 
         <ul class="site-nav">
-          <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+          <li class="nav-list"><a href="./index.html" class="link">Студия</a></li>
+          <li class="nav-list"><a href="" class="link">Портфолио</a></li>
+          <li class="nav-list"><a href="" class="link">Контакты</a></li>
         </ul>
       </nav>
 
+
       <ul class="auth-nav">
-        <li>
+        <li class="nav-list">
           <a href="mailto:info@devstudio.com" class="link"
             >info@devstudio.com</a
           >
         </li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+        <li class="nav-list"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
       </ul>
+      </div>
     </header>
 
     <main>
-      <section class="portfolio">
-        <ul>
-          <li><button type="button" class="portfolio-btn all">Все</button></li>
-          <li>
+      <section class="section portfolio">
+        <div class="container">
+        <ul class="filter">
+          <li class="nav-list"><button type="button" class="portfolio-btn all">Все</button></li>
+          <li class="nav-list">
             <button type="button" class="portfolio-btn web">Веб-сайты</button>
           </li>
-          <li>
+          <li class="nav-list">
             <button type="button" class="portfolio-btn app">Приложения</button>
           </li>
-          <li><button type="button" class="portfolio-btn dsn">Дизайн</button></li>
-          <li>
+          <li class="nav-list"><button type="button" class="portfolio-btn dsn">Дизайн</button></li>
+          <li class="nav-list">
             <button type="button" class="portfolio-btn mark">Маркетинг</button>
           </li>
         </ul>
-        <h1 class="hidden">Наши работы</h1>
+        </div>
 
-        <ul>
-          <li>
+        <h1 class="hidden">Наши работы</h1>
+        <div class=" section container">
+        <ul class="sections">
+          <li class="projects">
             <img
               src="./images/img1m.jpg"
               alt="Проект на десктопе"
@@ -70,7 +76,7 @@
             <p class="portfolio-text">Веб-сайт</p>
           </li>
 
-          <li>
+          <li class="projects">
             <img
               src="./images/img2m.jpg"
               alt="Постер"
@@ -81,7 +87,7 @@
             <p class="portfolio-text">Дизайн</p>
           </li>
 
-          <li>
+          <li class="projects">
             <img
               src="./images/img3m.jpg"
               alt="Реcторан Seafood"
@@ -92,7 +98,7 @@
             <p class="portfolio-text">Приложение</p>
           </li>
 
-          <li>
+          <li class="projects">
             <img
               src="./images/img4m.jpg"
               alt="Проект Prime"
@@ -103,7 +109,7 @@
             <p class="portfolio-text">Маркетинг</p>
           </li>
 
-          <li>
+          <li class="projects">
             <img
               src="./images/img5m.jpg"
               alt="Проект Boxes"
@@ -114,7 +120,7 @@
             <p class="portfolio-text">Приложение</p>
           </li>
 
-          <li>
+          <li class="projects">
             <img
               src="./images/img6m.jpg"
               alt="Проект веб-сайта"
@@ -125,7 +131,7 @@
             <p class="portfolio-text">Веб-сайт</p>
           </li>
 
-          <li>
+          <li class="projects">
             <img
               src="./images/img7m.jpg"
               alt="Дизайн издания"
@@ -136,7 +142,7 @@
             <p class="portfolio-text">Дизайн</p>
           </li>
 
-          <li>
+          <li class="projects">
             <img
               src="./images/img8m.jpg"
               alt="Проект Lab"
@@ -147,7 +153,7 @@
             <p class="portfolio-text">Маркетинг</p>
           </li>
 
-          <li>
+          <li class="projects">
             <img
               src="./images/img9m.jpg"
               alt="Проект для бизнеса"
@@ -158,11 +164,13 @@
             <p class="portfolio-text">Приложение</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <!--футер-->
-    <footer class="footer">
+    <footer class=" section footer">
+      <div class="container">
       <a href="" class="logo"
         ><span class="span-blue">Web</span
         ><span class="footer-white">Studio</span>
@@ -178,6 +186,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
