@@ -16,6 +16,7 @@
     --color-shadow-four: rgba(0, 0, 0, 0.15);
     --color-shadow-five: rgba(0, 0, 0, 0.14);
     --color-shadow-six: rgba(0, 0, 0, 0.2);
+    --color-bottom-line: #ECECEC;
 
     --font-bold: bold;
     --font-middle: 500;
@@ -46,13 +47,12 @@ overflow: hidden;
  margin-left: auto;
  margin-right: auto;
  width: 1200px;
- outline: 2px solid tomato;
 }
 
 .section {
 padding-top: 94px;  
 text-align: center;
-  }
+}
 
 /* body-style */
 .body {
@@ -64,6 +64,10 @@ letter-spacing: 0.03em;
 /* header-style */
 .body-header.container {
 background-color: var(--color-header-card);
+}
+
+.body-header {
+ border-bottom: 1px solid var(--color-bottom-line); 
 }
 
 .main-body {
@@ -168,8 +172,7 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 
-margin-top: 0;
-margin-bottom: 30px;
+padding-bottom: 30px;
 }
 
 .hero-btn {
@@ -198,10 +201,6 @@ box-shadow: 0px 4px 4px var(--color-shadow-four);
 }
 
 /* benefits */
-/* .about.container{
-width: 1170px;
-} */
-
 .about-item  {
 display: flex;
 padding: 0;
@@ -235,7 +234,7 @@ font-weight: var(--font-bold);
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
-margin-bottom: 50px;    
+padding-bottom: 50px;    
 }
 
 .work-list {
@@ -261,10 +260,10 @@ padding-bottom: 94px;
 flex-basis: calc((100% - 90px) / 4);
 }
 
-/* img {
+img {
 display: block;
-margin: 0;  
-} */
+margin: 0; }
+
 .person:not(:last-child) {
 margin-right: 30px;    
 }
@@ -300,9 +299,10 @@ color: var(--color-text);
 }
 
 /* footer */
-.section .footer {
-display: flex
-
+.section.footer {
+display: block;
+text-align: left;
+padding-top: 60px;
 }
 
 .footer-white {
@@ -318,6 +318,7 @@ color: var(--color-header-card);
 font-style: normal;
 font-size: var(--font-size-min);
 line-height: 1.7;
+padding-top: 20px;
 }
 
 .footer .link {
@@ -326,6 +327,12 @@ font-style: normal;
 font-size: var(--font-size-min);
 line-height: 1.7;
 text-decoration: none;
+padding-top: 9px;
+padding-bottom: 0;
+}
+
+.link.tel {
+padding-bottom: 60px;
 }
 
 .footer .link:hover,
